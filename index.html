@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT WORK</title>
+</head>
+<body>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shadow Studio</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#050816;
+color:white;
+overflow-x:hidden;
+}
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(12px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#4facfe;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+transition:.3s;
+}
+
+nav a:hover{
+color:#4facfe;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:120px 8% 60px;
+}
+
+.hero-content{
+max-width:650px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero h1 span{
+color:#4facfe;
+}
+
+.hero p{
+font-size:18px;
+color:#bbb;
+line-height:1.7;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+background:linear-gradient(90deg,#4facfe,#00f2fe);
+border-radius:40px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
+.hero-image{
+width:350px;
+height:350px;
+background:linear-gradient(135deg,#4facfe,#00f2fe);
+border-radius:50%;
+margin-left:60px;
+box-shadow:0 0 80px rgba(79,172,254,.5);
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+50%{transform:translateY(-20px);}
+}
+
+section{
+padding:90px 8%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:25px;
+}
+
+.card{
+background:#0f172a;
+padding:30px;
+border-radius:20px;
+transition:.3s;
+border:1px solid rgba(255,255,255,.08);
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:#4facfe;
+}
+
+.card h3{
+margin:15px 0;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.stat{
+background:#0f172a;
+padding:30px;
+border-radius:20px;
+}
+
+.number{
+font-size:45px;
+font-weight:bold;
+color:#4facfe;
+}
+
+.portfolio{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.project{
+height:220px;
+background:linear-gradient(135deg,#111,#1f2937);
+border-radius:20px;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:22px;
+transition:.3s;
+}
+
+.project:hover{
+transform:scale(1.03);
+}
+
+.contact{
+max-width:300px;
+margin:auto;
+}
+
+input,textarea{
+width:100%;
+padding:16px;
+margin-bottom:18px;
+border:none;
+border-radius:12px;
+background:#0f172a;
+color:white;
+}
+
+button{
+width:100%;
+padding:16px;
+background:linear-gradient(90deg,#4facfe,#00f2fe);
+border:none;
+border-radius:12px;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+
+footer{
+text-align:center;
+padding:30px;
+color:#888;
+border-top:1px solid rgba(255,255,255,.08);
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.hero-image{
+margin:50px 0 0;
+width:250px;
+height:250px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">TOBILOBA FEYISINA</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+<h1>Build the <span>Future</span> With Stunning Websites</h1>
+
+<p>Premium websites that are fast, modern and built to impress clients and businesses worldwide.</p>
+
+<a href="#contact" class="btn">Get Started</a>
+</div>
+
+<div class="hero-image"></div>
+
+</section>
+
+<section>
+
+<div class="stats">
+
+<div class="stat">
+<div class="number" data-target="150">0</div>
+<p>Projects</p>
+</div>
+
+<div class="stat">
+<div class="number" data-target="99">0</div>
+<p>Happy Clients</p>
+</div>
+
+<div class="stat">
+<div class="number" data-target="24">0</div>
+<p>Support</p>
+</div>
+
+<div class="stat">
+<div class="number" data-target="5">0</div>
+<p>Years</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="title">Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Web Design</h3>
+<p>Beautiful and responsive websites.</p>
+</div>
+
+<div class="card">
+<h3>Frontend</h3>
+<p>HTML, CSS and JavaScript experiences.</p>
+</div>
+
+<div class="card">
+<h3>Branding</h3>
+<p>Modern logos and visual identity.</p>
+</div>
+
+<div class="card">
+<h3>SEO</h3>
+<p>Rank higher on search engines.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<h2 class="title">Portfolio</h2>
+
+<div class="portfolio">
+
+<div class="project">E-Commerce</div>
+
+<div class="project">Restaurant</div>
+
+<div class="project">Finance</div>
+
+<div class="project">Agency</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="contact">
+
+<button><a href="https://wa.me/2349131283148?text=Hello Tobi,I would like to talk about a project"
+   target="_blank"
+   rel="noopener noreferrer">
+   CONTACT US ON WHATSAPP
+</a></button>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Tobiloba Feyisina. All Rights Reserved.
+</footer>
+
+<script>
+const numbers=document.querySelectorAll(".number");
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+const target=+entry.target.dataset.target;
+
+let count=0;
+
+const update=()=>{
+
+count+=Math.ceil(target/50);
+
+if(count>=target){
+
+entry.target.innerText=target+"+";
+
+}else{
+
+entry.target.innerText=count;
+
+requestAnimationFrame(update);
+
+}
+
+};
+
+update();
+
+observer.unobserve(entry.target);
+
+}
+
+});
+
+});
+
+numbers.forEach(n=>observer.observe(n));
+</script>
+
+</body>
+</html>
+    
+</body>
+</html>
